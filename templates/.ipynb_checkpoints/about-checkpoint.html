@@ -1,0 +1,68 @@
+{% include "header.html" %}
+
+<div class="container row">
+        <div class="col-md">
+            <h3 class='display-5'>Data used</h3>
+            <p>
+                To train the model the data used was from Kaggle. To be exact
+                from this <a href="https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia" target="_blank">link.</a> 
+            </p>
+            <p>
+                This data is obviously biased since it is of young children from a
+                very specific part of the world. Due to not being able to find any
+                other expansive source I decided to settle and use this data set.
+                The data is a series of x-ray images.
+            </p>
+            <p>
+                The data was originally divided into two cases, normal cases and 
+                Pneumonia cases. After starting to train my model I realized that
+                the images were all named according to the actual case. Whether 
+                bacterial, viral or normal. I then modified the data to adjust 
+                for the sake of specifity and training time.
+            </p>
+        </div>
+        <div class="col">
+            <img class="row img-thumbnail img-fluid max-width:85%" src="https://www.kaggle.com/static/images/site-logo.png" style="margin-left:50px; margin-top:75px;" alt="Kaggle">
+        </div>
+</div>
+<div class="container row">
+        <div class="col-sm">
+            <h3 class='display-5'>Technologies used</h3>
+            <p>
+                The technologies used for this project were Flask, Pytorch and both 
+                HTML and CSS. The reason for Pytorch over other machine learning 
+                libraries is due to the much more easier deployment methods such as 
+                Flask.
+            </p>
+            <p>
+                Since Python has such a large expanse on fields, from web dev to 
+                machine learning, it is easier to deploy and make use of my work. 
+                Making Python my preferred language at the time. 
+            </p>
+            <p>
+                Originally I was going to create my own custom model, but then realized that 
+                would be impractical and not to current standards. I therefore used transfer 
+                learning from resnet34. This greatly helped my training time.
+            </p>
+        </div>
+        <div class="col-sm">
+            <img class="row img-thumbnail img-fluid" src="https://pytorch.org/tutorials/_static/img/thumbnails/cropped/Introduction-to-TorchScript.png" style="margin-left:50px; margin-bottom:25px;" alt="Pytorch" width="55%">
+            <img class="row img-thumbnail img-fluid" src="https://miro.medium.com/max/438/1*0G5zu7CnXdMT9pGbYUTQLQ.png" style="margin-left:50px;" alt="Flask" width="65%">
+        </div>
+</div>
+<div class="container row">
+        <div class="col-sm">
+            <h3 class='display-5'>Time & Perfomance</h3>
+            <p>
+                For this project I used the majority of a summer. Within this time I learned 
+                machine learning fundamentals and how to make my own custom models. The 
+                current model being used for this website is of around 74% between the three 
+                possible cases. This is not great, but do to time and hardware constraints I 
+                can't afford to continue training. If anyone would like the model please see 
+                the contact page.
+            </p>
+        </div>
+</div>
+
+
+{% include "footer.html" %}

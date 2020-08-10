@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Pneumonia Helper</title>
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    
+    
+    <body class="container">
+        <h1 class="row">{{class_name}}</h1>
+    </body>
+    
+    <body class="container">
+        <div class="row">
+            <p>
+                Hi! This is my summer project and it involved me learning 
+                machine learning for something useful and meaningful.
+            </p>
+            <p>
+                This
+                website uses a model I trained to detect if an Xray shows
+                Bacterial, Viral or no signs of Pneumonia. While Pneumonia
+                may 
+                not be prevalent in many ways it is relavant to me and 
+                many others in the world.
+            </p>
+        </div>
+        
+        <div class="row">
+            <form class="col-sm" action="/test" method="post" enctype="multipart/form-data">
+                <input type="file" name="file"/>
+                <input type="submit"/>
+            </form>
+            <div class="col-sm">
+                <p>
+                    To see if an Xray has anything please upload the image.
+                    Please make sure it is an image file, jpeg or jpg to be exact.
+                    Furthermore, this can only take in one image at a time.
+                </p>
+                <p>
+                    If you find this useful and would like a better way to 
+                    upload many images at a time, do contact me with the
+                    contact information I provide in the about page.
+                </p>
+            </div>
+        </div>
+    </body>
+    
+</html>
