@@ -48,7 +48,7 @@ def home():
     if flask.request.method == 'POST':
         file = request.files['file']
     
-        if(file.filename.split('.')[-1].lower() != "jpeg" and file.filename.split('.')[-1].lower() != "jpg"): # checks if it a jpeg
+        if(file.filename.split('.')[-1].lower() != "jpeg" and file.filename.split('.')[-1].lower() != "jpg"): # checks if it is a jpeg
             print('not jpg or jpeg it was a %s' % (file.filename.split('.')[-1].lower()))
             return redirect('/')
         print(file.filename)
@@ -80,14 +80,14 @@ def contatct():
 #     print('got image!')
 #     return render_template('results.html', class_name=class_name)
 
-@app.route('/predict', methods=['POST'])
-def predict():
-    if request.method == 'POST':
-        # get the file
-        file = request.files['file']
-        image = file.read()
-        class_name = get_prediction(image_bytes=image)
-        return jsonify({"class": class_name})
+# @app.route('/predict', methods=['POST']) # api in the futures are like this!!
+# def predict():
+#     if request.method == 'POST':
+#         # get the file
+#         file = request.files['file']
+#         image = file.read()
+#         class_name = get_prediction(image_bytes=image)
+#         return jsonify({"class": class_name})
 
 
 if __name__ == '__main__':
